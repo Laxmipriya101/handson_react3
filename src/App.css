@@ -7,10 +7,28 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  margin: 0px 0px;
+}
+
+.App {
+  text-align: center;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(208, 124, 165);
+  background: linear-gradient(
+    0deg,
+    rgba(208, 124, 165, 1) 15%,
+    rgba(200, 235, 236, 1) 100%
+  );
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
 .App-header {
@@ -28,11 +46,54 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MainContainer {
+  line-height: 90px;
+}
+
+.inputText {
+  background-color: rgb(134, 215, 218);
+  border-radius: 10px;
+  text-align: center;
+  height: 40px;
+}
+
+label {
+  padding-right: 10px;
+  font-size: 30px;
+}
+
+button {
+  padding: 10px;
+  width: 200px;
+  border-radius: 20px;
+  font-size: 30px;
+  background-color: rgb(134, 215, 218);
+}
+
+.containerBox {
+  background-color: rgb(134, 215, 218);
+  width: 70rem;
+  height: 13rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: 2px solid;
+}
+
+.smallContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.boxes {
+  background-color: violet;
+  width: 30rem;
+  height: 4rem;
+  border: 2px solid;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.second {
+  line-height: 200px;
 }
